@@ -1,0 +1,301 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\STM32ISP.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\STM32ISP.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_DIALOG_ISP DIALOG DISCARDABLE  0, 0, 142, 164
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "Start",IDC_BUTTON_Start,2,8,78,40
+    PUSHBUTTON      "Read Info",IDC_BUTTON_ReadInfo,90,11,48,13
+    PUSHBUTTON      "Erase Chip",IDC_BUTTON_EraseChip,90,33,48,13
+    PUSHBUTTON      "ReadFlash",IDC_BUTTON_ReadFlash,90,113,48,13
+    GROUPBOX        "Program OptionBytes when ISP",IDC_STATIC,0,52,139,55
+    CONTROL         "",IDC_CHECK_OptionBytes,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,125,54,8,8
+    LTEXT           "RDP:",IDC_STATIC,2,71,14,9
+    EDITTEXT        IDC_EDIT_RPD,20,68,17,12,ES_AUTOHSCROLL
+    LTEXT           "User:",IDC_STATIC,43,71,17,9
+    EDITTEXT        IDC_EDIT_User,64,68,17,12,ES_AUTOHSCROLL
+    LTEXT           "WRPS:",IDC_STATIC,1,88,16,9
+    EDITTEXT        IDC_EDIT_WRP0,20,86,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WRP1,38,86,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WRP2,56,86,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_WRP3,74,86,17,12,ES_AUTOHSCROLL
+    LTEXT           "Data0-1:",IDC_STATIC,104,71,31,9
+    EDITTEXT        IDC_EDIT_Data0,98,86,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_Data1,117,86,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_SAVE,0,129,142,28,ES_AUTOHSCROLL
+END
+
+IDD_DIALOG_IAP DIALOG DISCARDABLE  0, 0, 142, 164
+STYLE WS_CHILD
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "IapStart",IDC_BUTTON_IAPStart,2,8,78,40
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_DIALOG_ISP, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 157
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About STM32ISP"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "WIFI-DMX.COM",IDC_STATIC,48,7,65,13,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2018",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_STM32ISP_DIALOG DIALOGEX 0, 0, 446, 343
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "STM32ISP V1.0.0  wifi-dmx.com"
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        "Code File",IDC_STATIC,7,6,282,31
+    EDITTEXT        IDC_EDIT_File,13,15,270,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "...",IDC_BUTTON_OpenFile,296,14,28,19
+    EDITTEXT        IDC_EDIT_OutPut,204,43,235,275,ES_MULTILINE | WS_VSCROLL
+    COMBOBOX        IDC_COMBO_Port,23,53,68,75,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_COMBO_Bps,117,53,68,64,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "Port",IDC_STATIC,14,41,86,31
+    GROUPBOX        "Bps",IDC_STATIC,108,41,86,31
+    CONTROL         "Progress1",IDC_PROGRESS1,"msctls_progress32",PBS_SMOOTH | 
+                    WS_BORDER,204,320,235,16
+    CONTROL         "",IDC_CHECK_GO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    360,25,9,9
+    LTEXT           "Run After ISP",IDC_STATIC,376,24,62,11
+    COMBOBOX        IDC_COMBO_DTR,7,320,194,86,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Tab1",IDC_TAB1,"SysTabControl32",0x0,9,80,189,233
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_STM32ISP_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 439
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 336
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "STM32ISP MFC Application\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "STM32ISP\0"
+            VALUE "LegalCopyright", "Copyright (C) 2018\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "STM32ISP.EXE\0"
+            VALUE "ProductName", "STM32ISP Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_STM32ISP_DIALOG DLGINIT
+BEGIN
+    IDC_COMBO_DTR, 0x403, 16, 0
+0x6f4e, 0x2074, 0x7355, 0x2065, 0x5452, 0x2653, 0x5444, 0x0052, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "&About STM32ISP..."
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\STM32ISP.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
